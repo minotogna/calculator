@@ -1,9 +1,12 @@
 import React from 'react'
 
+import { useCalculatorResult } from '@webapp/store/calculator'
+
 import style from './result.scss'
 
 const Result = () => {
-  return <div className={style.result}>12.435</div>
+  const result = useCalculatorResult()
+  return <div className={style.result}>{result}</div>
 }
 
 export default Result
