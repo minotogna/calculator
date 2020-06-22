@@ -6,7 +6,7 @@ import { CalculatorEpics, CalculatorReducer, CalculatorState } from './calculato
 const rootReducer = combineReducers({
   [CalculatorState.stateKey]: CalculatorReducer,
 })
-const rootEpic = combineEpics(CalculatorEpics.updateResult)
+const rootEpic = combineEpics(CalculatorEpics.updateResult, CalculatorEpics.updateExpressionFromClick)
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 

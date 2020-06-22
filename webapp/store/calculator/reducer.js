@@ -13,6 +13,8 @@ const actionHandlers = {
     ...state,
     [CalculatorState.keys.result]: value,
   }),
+
+  [CalculatorActions.CALCULATOR_STATE_RESET]: () => CalculatorState.initialState,
 }
 
 export default exportReducer(actionHandlers, CalculatorState.initialState)

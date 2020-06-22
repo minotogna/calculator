@@ -6,6 +6,7 @@ import style from './result.scss'
 
 const Result = () => {
   const result = useCalculatorResult()
+
   return <div className={style.result}>{result}</div>
 }
 
