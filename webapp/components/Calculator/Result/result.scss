@@ -5,6 +5,7 @@
   background-color: darken($colorBg, 7%);
   border-top: 3px double $colorBg;
   font-size: $fontSize + 2px;
+  color: lighten($colorBgSecondary, 40%);
   display: flex;
   align-items: center;
   justify-content: flex-end;

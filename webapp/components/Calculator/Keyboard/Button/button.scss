@@ -9,10 +9,19 @@
     background-color: darken($colorBg, 7.5%);
   }
 
+  &:focus {
+    background-color: darken($colorBg, 8%);
+  }
+
   &:nth-child(4n) {
     background-color: $colorBgSecondary;
+
     &:hover {
       background-color: darken($colorBgSecondary, 5%);
+    }
+
+    &:focus {
+      background-color: darken($colorBgSecondary, 3%);
     }
   }
 }
