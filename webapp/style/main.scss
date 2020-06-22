@@ -1,0 +1,37 @@
+@import './config';
+
+html,
+body,
+#main {
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+  padding: unset;
+  margin: unset;
+}
+
+body {
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  font-weight: 200;
+  color: $colorFont;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $colorBg;
+}
+
+input,
+button {
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  font-weight: 200;
+  margin: unset;
+  border: unset;
+  padding: unset;
+  outline: unset;
+  color: $colorFont;
+}

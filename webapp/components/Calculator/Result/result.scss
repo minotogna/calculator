@@ -1,0 +1,11 @@
+@import 'webapp/style/config';
+
+.result {
+  padding: 0 12px;
+  background-color: darken($colorBg, 7%);
+  border-top: 3px double $colorBg;
+  font-size: $fontSize + 2px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

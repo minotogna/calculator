@@ -85,6 +85,12 @@ const webPackConfig = {
             loader: 'css-loader',
             options: {
               modules: {
+                mode: (resourcePath) => {
+                  const pathMainStyle = path.join(__dirname, 'webapp', 'style')
+                  if (resourcePath.startsWith(pathMainStyle)) return 'global'
+                  return 'local'
+                },
+                exportGlobals: true,
                 localIdentName: isProduction ? '[hash:base64:5]' : '[path][name]__[local]--[hash:base64:5]',
               },
             },

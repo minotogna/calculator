@@ -1,0 +1,18 @@
+@import 'webapp/style/config';
+
+.button {
+  background-color: darken($colorBg, 10%);
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+
+  &:hover {
+    background-color: darken($colorBg, 7.5%);
+  }
+
+  &:nth-child(4n) {
+    background-color: $colorBgSecondary;
+    &:hover {
+      background-color: darken($colorBgSecondary, 5%);
+    }
+  }
+}

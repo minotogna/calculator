@@ -8,11 +8,9 @@ import Keyboard from './Keyboard'
 const Calculator = () => {
   return (
     <div className={style.calculator}>
-      <div className={style.container}>
-        <Input />
-        <Result />
-        <Keyboard />
-      </div>
+      <Input />
+      <Result />
+      <Keyboard />
     </div>
   )
 }

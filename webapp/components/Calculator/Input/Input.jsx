@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useLayoutEffect, useRef } from 'react'
+
+import style from './input.scss'
 
 const Input = () => {
-  return <input type="text" />
+  const inputRef = useRef(null)
+
+  useLayoutEffect(() => {
+    inputRef.current.focus()
+  }, [])
+
+  return <input className={style.input} type="text" ref={inputRef} />
 }
 
 export default Input
