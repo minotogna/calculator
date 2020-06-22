@@ -2,10 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 
+import Calculator from '@webapp/components/Calculator'
+
 function renderApp() {
   ReactDOM.render(
     <BrowserRouter>
-      <div>Welcome!</div>
+      <Calculator />
     </BrowserRouter>,
     document.getElementById('main')
   )
