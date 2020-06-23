@@ -19,3 +19,10 @@ The application allows basic arithmetical operations.
 - yarn install
 - yarn build
 - yarn start
+
+## Run tests
+> Before running the tests, make sure the node server is running (see **Run the dev instance locally** or **Run the prod build locally**)
+
+End-to-end tests have been implemented using jest and puppeteer.
+- yarn test
+ 
