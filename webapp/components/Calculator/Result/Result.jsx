@@ -7,7 +7,11 @@ import style from './result.scss'
 const Result = () => {
   const result = useCalculatorResult()
 
-  return <div className={style.result}>{result}</div>
+  return (
+    <div id="result" className={style.result}>
+      {result}
+    </div>
+  )
 }
 
 export default Result
