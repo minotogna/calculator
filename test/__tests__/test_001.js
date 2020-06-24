@@ -21,7 +21,6 @@ describe(
     beforeAll(async () => {
       page = await global.__BROWSER__.newPage()
       await page.goto(URL, { waitUntil: 'networkidle2' })
-      await page.target().createCDPSession()
     })
 
     afterAll(async () => {
